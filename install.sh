@@ -29,8 +29,6 @@ ks pkg install mypkgs/tf-mnistjob
 
 #6. Deploy kubeflow core components to K8s cluster.
 
-ks generate centraldashboard centraldashboard
-ks apply ${KS_ENV} -c centraldashboard 
 ks generate tf-job-operator tf-job-operator
 ks apply ${KS_ENV} -c tf-job-operator 
 
